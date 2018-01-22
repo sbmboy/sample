@@ -4,7 +4,6 @@ $db_config = get_db_config();
 
 return [
 
-    'default' => $db_config['connection'],
 
     /*
     |--------------------------------------------------------------------------
@@ -17,7 +16,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    // 'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -34,6 +33,8 @@ return [
     | choice installed on your machine before you begin development.
     |
     */
+
+    'default' => $db_config['connection'],
 
     'connections' => [
 
